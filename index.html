@@ -1,287 +1,705 @@
-<!DOCTYPE html>
+:root {
+   
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Analytics</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="general.css">
+    --color1: #FFA124;
+    --color2: #F7A22C;
+    --color3: #BCDAB5;
+    --color4: #BBD9B3;
+    --color5: #BCD8B2;
+    --color6: #FFD093;
+    --color7: #F9D495;
+    --color8: #B9CCE6;
+    --color9: #FDD193;
+    --color10: #EBD7F0;
+    --color11: #B7CCEB;
+    --color12: #EBD7F0;
+    --color13: #FAA932;
+    --color14: #B7CDEB;
+
+
+    --bar-top: #FEC844;
+    --bar-middle1:#FEA127;
+    --bar-middle2:#76B368;
+    --bar-bottom:#729AD2;
+
+}
+  
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.all-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around !important; 
+    margin-top: 1vh !important;   
+    height: 97vh !important;
+    width: 80vw;
+    margin-left: 10vw;
+    overflow: hidden;
+    padding: 0px !important;
+}
+
+
+.all-header-wrapper {
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    height: 34vh;
+    background-color: #f0f0f0;
+    width: 100%;  
+    padding-top: -10px !important;
+    overflow: hidden !important;
+
     
-</head>
-<body>
-    <div class="all-wrapper">
-
-        <div class="all-header-wrapper">
-
-            <div class="each-all-header-box">
-                <div class="each-all-header-box-title">
-                    New Wins
-                </div>
-                <div class="each-all-header-box-body">
-                    <div class="each-all-header-box-body-line1">
-                       230
-                    </div>
-
-                    <div class="each-all-header-box-body-line2">
-                        <div class="arrow">&uarr;</div>
-                            
-                            25&percnt;
-                    </div>
-
-                    <div class="each-all-header-box-body-line3">
-                       previous 30 days
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="each-all-header-box">
-                <div class="each-all-header-box-title">
-                    Trial: Win Rate
-                </div>
-                <div class="each-all-header-box-body">
-                    <div class="each-all-header-box-body-line1">
-                      9.86 <div class="percent">&percnt;</div>
-                    </div>
-
-                    <div class="each-all-header-box-body-line2">
-                        <div class="arrow">&uarr;</div>
-                            
-                        25&percnt;
-                    </div>
-
-                    <div class="each-all-header-box-body-line3">
-                       previous 30 days
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="each-all-header-box">
-                <div class="each-all-header-box-title">
-                    New MRR
-                </div>
-                <div class="each-all-header-box-body">
-                    <div class="each-all-header-box-body-line1">
-                        <div class="dollar">$</div> 25,690
-                    </div>
-
-                    <div class="each-all-header-box-body-line2">
-                        
-                         <div class="arrow">&uarr;</div>
-                       8.7&percnt;
-                    </div>
-
-                    <div class="each-all-header-box-body-line3">
-                       previous 30 days
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="each-all-header-box">
-                <div class="each-all-header-box-title title4">
-                    Page Views
-                </div>
-                <div class="each-all-header-box-body">
-                    <div class="pie-label" >
-                        <div class="referral">
-                            Referral
-                        </div>
-
-                        <div class="direct">
-                            Direct
-                        </div>
-
-                        <div class="organic">
-                            Organic Search
-                        </div>
-                    </div>
-                    <div class="pie">
-                        <div id="my-pie-chart"></div>
-                        <div id="my-pie-chart-2"></div>
-                    </div>  
-                    </div>
-                    
-            </div>
-            
-        </div>
-        
-
-        <div class="all-body-wrapper">
-            <div class = "each-all-body-box">
-                <div class="each-all-body-box-title">
-                    MRR Stats by Country
-                </div>
-
-                <div class="each-all-body-box1-body">
-                      <div class="chart-wrapper">
-                        <div class="chart-y">
-                          <div>$14.0</div>
-                          <div>$12.0</div>
-                          <div>$10.0</div>
-                          <div>$8.0</div>
-                          <div>$6.0</div>
-                          <div>$4.0</div>
-                          <div>$2.0</div>
-                          <div>$0.0</div>
-                          <div>-$2.0</div>
-                        </div>
-                        <div class="chart-x">
-                           <div >
-                              <div></div>
-                            </div>
-                            <div>
-                              <div></div>
-                            </div>
-                            <div>
-                                <div></div>
-
-                            </div>
-                            <div >
-                                <div></div>
-                            </div>
-                            <div >
-                                <div></div>
-                            </div>
-                            <div >
-                                <div></div>
-                            </div>
-                            <div >
-                                <div></div>
-                            </div>
-                            <div>
-                                <div></div>
-                            </div>
-                  
-                            <div>
-                              <div></div>
-                            </div>
-                            <div>
-                              <div></div>
-                            </div>
-                    
-                            <div>
-                                <div></div>
-                            </div>
-                            <div >
-                                <div></div>
-                            </div>
-                            <div >
-                                <div></div>
-                            </div>
-                            <div >
-                                <div></div>
-                            </div>
-                            <div >
-                                <div></div>
-                            </div>
-                            <div>
-                                <div></div>
-                            </div>
-                        </div>
-                  
-                   
-                      </div>
-                      <div class="chart-x-label">
-                          <div>$0</div>
-                          <div>$100</div>
-                          <div>$200</div>
-                          <div>$300</div>
-                          <div>$400</div>
-                          <div>$400</div>
-                          <div>$500</div>
-                          <div>$600</div>
-                          <div>$700</div>
-                      </div>
-                </div>
-
-                <div class="each-all-body-box1-footer">
-                    <div>
-                        <div class="states states1"></div>
-                        <div>United States</div>
-                    </div>
-
-                    <div>
-                        <div class="states states2"></div>
-                        <div>Australia</div>
-                    </div>
-
-                    <div>
-                        <div class="states states3"></div>
-                        <div>Canada</div>
-                    </div>
-
-                    <div>
-                        <div class="states states4"></div>
-                        <div>United Kingdom</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class=  "each-all-body-box">
-
-                <div class="each-all-body-box-title">
-                    MRR
-                </div>
-
-                <div class="each-all-body-box2-body">
-
-                    <div class="bar-wrapper">
-                        <div class="bar-y">
-                          <div>$ 14.0</div>
-                          <div>$ 12.0</div>
-                          <div>$ 10.0</div>
-                          <div>$ 8.0</div>
-                          <div>$ 4.0</div>
-                          <div>$ 2.0</div>
-                          <div>$ 0.0</div>
-                          <div>-$2.0</div>
-                        </div>
-                        <div class="bar-x">
-                           <div >
-                              <div></div>
-                            </div>
-                            <div>
-                              <div></div>
-                            </div>
-                            <div>
-                                <div></div>
-                            </div>
-                            <div >
-                                <div></div>
-                            </div>
-                            <div >
-                                <div></div>
-                            </div>
-                            <div >
-                                <div></div>
-                            </div>
-                           
-                            
-                        </div>
-                    </div>
-
-                    <div class="chart-x-label bard">
-                          <div>Jan-Feb</div>
-                          <div>Mar-Apr</div>
-                          <div>May-Jun</div>
-                          <div>Jul-Aug</div>
-                          <div>Sep-Oct</div>
-                          <div>Nov-Dec</div>
-                    </div>
-                
-                    
-                </div>
-            </div>
-        </div>
+}
 
 
-    </div>
+
+.all-body-wrapper{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     
-    </div>
-</body>
-</html>
+    height: 62vh;
+    width: 100%;
+}
+
+.each-all-header-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 2% 0% 0% ;
+    margin-right: calc(4vh) ;
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    height: 90%;
+    padding: 0px !important;
+    position: relative;
+    border-radius: 4%;
+}
+
+.each-all-header-box:last-child{
+    margin-right: 0px !important;
+}
+
+
+.each-all-header-box-title{
+    content: ".";
+    font-size: .8em;
+    font-weight: 400;
+    color: #555;
+    margin-top: 0px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+ 
+}
+
+.each-all-header-box-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px !important;
+}
+
+.each-all-header-box-body-main-value{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    font-size: 3rem;
+    color: #555;
+}
+
+.each-all-header-box-body-percentage-arrow{
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  padding-bottom: 10px;
+  transform: scale(1.4);
+}
+
+.each-all-header-box-body-percentage-wrapper{
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 128, 0, 0.758);
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+}
+
+
+.each-all-header-box-body-footer-wrapper{
+    color: hsl(0, 0%, 33%);
+    font-size: .7rem;
+    margin-bottom: 20%;
+    margin-top: 5px;
+}
+
+
+.each-all-body-box{
+    width: 49% !important;
+    height: 105%;
+    background-color: #fff !important;
+    padding: 1%;
+    overflow-y: visible;
+    margin-right: calc(4vh) !important;
+}
+
+.each-all-body-box:last-child{
+    margin-right: 0px !important;
+}
+
+.title4{
+   position: absolute;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.percent{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #555;
+    font-weight: 800;
+    margin : 0px !important;
+    padding: 0px !important;
+    position: relative;
+    bottom: 30px;
+    right: 15px;
+}
+
+.dollar{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #555;
+    font-weight: 800;
+    margin : 0px !important;
+    padding: 0px !important;
+    position: relative;
+    bottom: 30px;
+    left: 15px;
+
+}
+
+#my-pie-chart {
+    height: 150px;
+    width: 150px;
+}
+
+#my-pie-chart {
+    border-radius: 50%;
+  }
+.pie{
+    margin-top: 50px;
+    position: relative;
+   
+}
+  
+#my-pie-chart {
+    background: conic-gradient(#709BCF 0% 10%, #76B364 10% 88%, #FFC255 89% 92%, #709BCF 92% 97%);
+}
+
+#my-pie-chart-2 {
+    
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    top: -33%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+  .each-all-header-box-body-pie-label-wrapper{
+   font-size: .7rem;
+    position: absolute;
+    color: #555;
+  }
+
+  .each-all-header-box-body-pie-label-referral{
+    position: relative;
+    top: 35px;
+    right: 40px;
+  }
+
+  .each-all-header-box-body-pie-label-direct{
+    position: relative;
+    top: 20px;
+    left: 100px;
+  }
+
+  .each-all-header-box-body-pie-label-organic{
+    position: relative;
+    top: 180px;
+    left: 50px;
+  
+  }
+/*
+
+*/
+.each-all-body-box1-body {
+    font-size: .5rem;
+  
+    background-color: #fff;
+    padding-bottom: 0px !important;
+    margin-top: 0px !important;
+}
+
+.each-all-body-box2-body{
+    font-size: .5rem;
+    height: 100% !important;
+    margin-top: -19px;
+    padding-top: -10px !important;
+    background-color: #fff !important;
+}
+
+.each-all-body-box-title{
+  font-size: .7em;
+  font-weight: 400;
+  color: #555;
+  margin-top: 10px;
+  position: relative;
+  left: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+
+  
+  
+}
+
+.each-all-body-box1-body-chart-wrapper {
+    display: flex;
+    height: 50% !important;
+    width: 100%;
+    overflow: hidden;
+}
+  
+
+.each-all-body-box1-body-chart-y  {    
+    color: #555;
+    font-size: 1rem;
+    margin-top: 5px;
+    border-right: 2px solid #ccc;
+}
+.each-all-body-box1-body-chart-y-value {    
+    padding: 20px 5px 10px 25px;
+    position: relative;
+}
+ .each-all-body-box1-body-chart-x {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex: 3;
+    border-bottom: 2px solid #ccc;
+    padding-left: -20px !important;
+}
+
+
+.each-all-body-box1-body-chart-x-label-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 80%;
+    color: #555;
+    margin-left: 80px;
+    margin-top: 15px;
+    font-size: 1rem ;
+}
+
+.each-all-body-box1-body-chart-x-label{
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+  
+.each-all-body-box1-body-bubble-wrapper {
+    position: relative;
+    width: 22%;
+}
+  
+  .each-all-body-box1-body-bubble-wrapper:nth-child(1) {
+    bottom: 46%;
+    left: 3%;
+  }
+  
+  .each-all-body-box1-body-bubble-wrapper:nth-child(2) {
+    bottom: 28%;
+    left: 4%;
+  }
+  
+  .each-all-body-box1-body-bubble-wrapper:nth-child(3) {
+    bottom: 15%;
+    left: 4%;
+  }
+  
+  .each-all-body-box1-body-bubble-wrapper:nth-child(4) {
+    bottom: 70%;
+    left: 0%;
+  }
+  
+  .each-all-body-box1-body-bubble-wrapper:nth-child(5) {
+    bottom: 45%;
+    left: 0%;
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(6) {
+    bottom: 42%;
+    left: -5%;
+  }
+  .each-all-body-box1-body-bubble-wrapper:nth-child(7) {
+    bottom: 20%;
+    left: -9%;
+  }
+  .each-all-body-box1-body-bubble-wrapper:nth-child(8) {
+   bottom: 75%;
+    left: -7%;
+    z-index: 10;
+  }
+  .each-all-body-box1-body-bubble-wrapper:nth-child(9) {
+    bottom: 48%;
+    left: -7%;
+  }
+  .each-all-body-box1-body-bubble-wrapper:nth-child(10) {
+    bottom: 70%; 
+    left: -16%;
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(11) {
+    bottom: 28%;
+    left: -19%;
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(12) {
+    bottom: 35%;
+    left: -24%;
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(13) {
+    bottom: 68%;
+    left: -25%;
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(14) {
+    bottom: 20%;
+    left: -34%;
+  }
+  
+  .each-all-body-box1-body-bubble-wrapper:nth-child(1) .each-all-body-box1-body-bubble{
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%;
+    background-color: var(--color1);
+  }
+  
+  .each-all-body-box1-body-bubble-wrapper:nth-child(2) .each-all-body-box1-body-bubble{
+    width: 47.5px; 
+    height: 47.5px; 
+    border-radius: 50%;
+
+    background-color: var(--color2);
+  }
+  
+  .each-all-body-box1-body-bubble-wrapper:nth-child(3) .each-all-body-box1-body-bubble{
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%;
+    background-color: var(--color3);
+  }
+  
+  .each-all-body-box1-body-bubble-wrapper:nth-child(4) .each-all-body-box1-body-bubble{
+    width: 47.5px; 
+    height: 47.5px; 
+    border-radius: 50%;
+    background-color: var(--color4);
+  }
+  
+  .each-all-body-box1-body-bubble-wrapper:nth-child(5) .each-all-body-box1-body-bubble{
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    background-color: var(--color5);
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(6) .each-all-body-box1-body-bubble{
+    width: 47.5px; 
+    height: 47.5px; 
+    border-radius: 50%;
+    background-color: var(--color6);
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(7) .each-all-body-box1-body-bubble{
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%;
+    background-color: var(--color7);
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(8) .each-all-body-box1-body-bubble{
+    width: 55px; 
+    height: 55px; 
+    border-radius: 50%;
+    background-color: var(--color8);
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(9) .each-all-body-box1-body-bubble{
+    width: 47.5px; 
+    height: 47.5px; 
+    border-radius: 50%;
+    background-color: var(--color9);
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(10) .each-all-body-box1-body-bubble{
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    background-color: var(--color10);
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(11) .each-all-body-box1-body-bubble{
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    background-color: var(--color11);
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(12) .each-all-body-box1-body-bubble{
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    background-color: var(--color12);
+  }
+
+  .each-all-body-box1-body-bubble-wrapper:nth-child(13) .each-all-body-box1-body-bubble{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: var(--color14);
+   }
+
+   .each-all-body-box1-body-bubble-wrapper:nth-child(14) .each-all-body-box1-body-bubble{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--color13);
+   }
+  
+.each-all-body-box1-footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    padding: 0px;
+    padding-top: 10px;;
+    font-size: .7rem;
+    margin-bottom: 60px !important;
+}
+
+.each-all-body-box1-footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: black;
+
+}
+
+
+.each-all-body-box1-footer-states{
+    content: ".";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    padding-left: 0px; 
+}
+
+.each-all-body-box1-footer-states.states1{
+  left: -22% !important;
+  background-color: var(--color10) !important;
+}
+.each-all-body-box1-footer-states.states2{
+  left: -32% !important;
+  background-color: var(--color6) !important;
+}
+.each-all-body-box1-footer-states.states3{
+  left: -40% !important;
+  background-color: var(--color3) !important;
+}
+.each-all-body-box1-footer-states.states4{
+  left: -20% !important;
+  background-color: var(--color1) !important;
+}
+
+
+.each-all-body-box2-body-bar-wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  
+  
+.each-all-body-box2-body-bar-y-wrapper {
+    z-index: 1000;
+    overflow: visible;
+  }
+
+.each-all-body-box2-body-bar-y {    
+    padding: 1px 0px 0px 5px;
+    position: relative;
+    color: #555;
+    font-size: 1rem;
+    margin-top: 40px;
+   
+  }
+  /* draw a horizontal line */
+.each-all-body-box2-body-bar-y::after {    
+    content: "";
+    display: block;
+    width: 1300%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 50%;
+    left: 95%;
+  }
+
+.each-all-body-box2-body-bar-x-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex: 3;
+    padding: 10px;
+  }
+  
+  .each-all-body-box2-body-bar-x-wrapper-label {
+   display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 10%;
+    color: #555;
+  }
+  
+.each-all-body-box2-body-bar-x {
+    position: relative;
+    width: 22%;
+    z-index: 1000;
+
+    
+  }
+  
+.each-all-body-box2-body-bar-x:nth-child(1) {
+    
+    bottom: 15%;
+    left: 5%;
+  }
+  
+.each-all-body-box2-body-bar-x:nth-child(2) {
+    bottom: 5%;
+    left: 1%;
+  }
+  
+.each-all-body-box2-body-bar-x:nth-child(3) {
+    bottom: 12%;
+    left: -1%;
+  }
+  
+.each-all-body-box2-body-bar-x:nth-child(4) {
+    bottom: 12%;
+    left: -3%;
+
+  }
+  
+.each-all-body-box2-body-bar-x:nth-child(5) {
+    bottom: 7%;
+    left: -6%;
+  }
+  
+.each-all-body-box2-body-bar-x:nth-child(6) {
+    bottom: 10%;
+    left: -8%;
+  }
+  
+ 
+  .each-all-body-box2-body-bar-x:nth-child(1) .each-all-body-box2-body-bar {
+    background: linear-gradient(to bottom, var(--bar-top) 49%, var(--bar-middle1) 49% 94%, var(--bar-bottom) 94%);
+    width: 42px;
+    height: 305px; 
+  }
+  
+.each-all-body-box2-body-bar-x:nth-child(2) .each-all-body-box2-body-bar {
+    background: linear-gradient(to bottom, var(--bar-top) 55%, var(--bar-middle1) 55% 87%,var(--bar-middle2) 87% 92%, var(--bar-bottom) 92%);
+    width: 42px;
+    height: 435px; 
+
+  }
+  
+.each-all-body-box2-body-bar-x:nth-child(3) .each-all-body-box2-body-bar {
+    background: linear-gradient(to bottom, var(--bar-top) 55%, var(--bar-middle1) 55% 80%,var(--bar-middle2) 80% 90%, var(--bar-bottom) 90%);
+    width: 42px;
+    height: 305px;
+
+  }
+  
+.each-all-body-box2-body-bar-x:nth-child(4) .each-all-body-box2-body-bar{
+    background: linear-gradient(to bottom, var(--bar-top) 30%, var(--bar-middle1) 30% 88%,var(--bar-middle2) 88% 92%, var(--bar-bottom) 92%);
+    width: 42px; 
+    height: 320px; 
+
+  }
+  
+.each-all-body-box2-body-bar-x:nth-child(5) .each-all-body-box2-body-bar {
+    background: linear-gradient(to bottom, var(--bar-top) 45%, var(--bar-middle1) 45% 80%, var(--bar-bottom) 80%);
+    width: 42px;
+    height: 240px; 
+
+  
+  }
+  
+.each-all-body-box2-body-bar-x:nth-child(6) .each-all-body-box2-body-bar {
+    background: linear-gradient(to bottom, var(--bar-top) 50%, var(--bar-middle1) 50% 85%, var(--bar-bottom) 85%);
+    width: 42px;
+    height: 150px; 
+
+  }
+  
+
+  
+.each-all-body-box2-body-bar-x-label-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 70px !important;
+    color: #555;
+    margin-top: 20px !important;
+  }
+.each-all-body-box2-body-bar-x-label{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 17px 0px 0px !important;
+    padding: 0px !important;
+    font-size: 1rem;
+  }
+  
