@@ -1,0 +1,100 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', 'Open Sans', 'Helvetica Neue', sans-serif;;
+  }
+  html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+      background: rgb(254, 254, 254);
+      background-size: cover;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    overflow-y: scroll;
+  }
+  
+  .display-none {
+    display: none;
+  }
+  
+  input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+  input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration { display: none; }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  :root {
+    --page-padding: 60px;
+    --small-distance: 10px;
+  
+    --border-width: 1px;
+    --bold-border-width: 2px;
+    --border-radius: 7px;
+  
+    --shadow-width: 3px;
+  
+    --main-color: rgb(125, 128, 218);
+    --second-color: rgb(185, 214, 242);
+    --text-color: rgb(0, 4, 40);
+    --text-color-light: rgba(0, 4, 40, 0.8);
+    --code-color: rgb(65, 144, 34);
+    --placeholder-color: rgb(0, 4, 40, 0.2);
+    --border-color: rgb(236, 236, 236);
+    --shadow-color: rgba(0, 4, 40, 0.6);
+    --shadow-hover-color: rgba(0, 4, 40, 0.8);
+    --highlight-color: rgb(248, 248, 248);
+    --background-color: rgb(254, 254, 254);
+    --active-status-color: rgb(57, 129, 29);
+    --upcoming-status-color: rgb(130, 170, 235);
+    --ended-status-color: rgb(255, 22, 3);
+    --high-popularity-color: rgb(57, 129, 29);
+    --medium-popularity-color: rgb(255, 215, 0);
+    --low-popularity-color: rgb(255, 22, 3);
+  }
+  
+  .bold {
+    font-weight: 800 !important;
+  }
+  .main-color {
+    color: var(--main-color) !important;
+  }
+  .second-color {
+    color: var(--second-color) !important;
+  }
+  
+  @media only screen and (max-width: 850px) {
+    :root {
+      --page-padding: 30px;
+    }
+  }
