@@ -1,80 +1,31 @@
-:root {
-   
-
-  --color1: #FFA124;
-  --color2: #F7A22C;
-  --color3: #BCDAB5;
-  --color4: #BBD9B3;
-  --color5: #BCD8B2;
-  --color6: #FFD093;
-  --color7: #F9D495;
-  --color8: #B9CCE6;
-  --color9: #FDD193;
-  --color10: #EBD7F0;
-  --color11: #B7CCEB;
-  --color12: #EBD7F0;
-  --color13: #FAA932;
-  --color14: #B7CDEB;
-
-
-  --bar-top: #FEC844;
-  --bar-middle1:#FEA127;
-  --bar-middle2:#76B368;
-  --bar-bottom:#729AD2;
-
-}
-
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
-  background-color: #f0f0f0;
-}
-
 .all-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-around !important; 
-  margin-top: 1vh !important;   
-  height: 97vh !important;
+  justify-content: space-around; 
+  align-items: center;
+  margin-top: 20px;   
   width: 80vw;
   margin-left: 10vw;
-  overflow: hidden;
-  padding: 0px !important;
 }
-
 
 .all-header-wrapper {
-  font-size: 2rem;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between !important;
-  height: 34vh;
-  background-color: #f0f0f0;
-  width: 100%;  
-  padding-top: -10px !important;
-  overflow: hidden !important;
-
-  
-}
-
-
-
-.all-body-wrapper{
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 1vh;
+  font-size: 45px;
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  
-  height: 62vh;
+  height: 350px;
+  background-color: rgb(240, 240, 240);
+  width: 100% ;   
+}
+
+.all-body-wrapper{
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px; 
   width: 100%;
 }
 
@@ -83,119 +34,101 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0% 2% 0% 0% ;
-  margin-right: calc(4vh) ;
-  background-color: #fff;
-  color: black;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
   width: 100%;
-  height: 90%;
-  padding: 0px !important;
   position: relative;
-  border-radius: 4%;
+  border-radius: 10px;
 }
 
 .each-all-header-box:last-child{
-  margin-right: 0px !important;
+  margin-right: 0px;
 }
 
 
 .each-all-header-box-title{
-  content: ".";
-  font-size: .8em;
-  font-weight: 400;
-  color: #555;
+  font-size: 24px;
+  color: rgb(85, 85, 85);
   margin-top: 0px;
   position: absolute;
   top: 20px;
   left: 20px;
-  font-size: 1.5rem;
+  font-size:  30px;
   font-weight: 600;
-
-
 }
 
 .each-all-header-box-body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 55px !important;
+  margin-top: 55px ;
 }
 
 .each-all-header-box-body-main-value{
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   letter-spacing: 2.5px;
-  font-size: 3rem;
-  color: #555;
+  font-size: 60px;
+  color: rgb(85, 85, 85);
 }
 
+
 .each-all-header-box-body-percentage-arrow{
-display: inline-block;
-margin-left: 0px;
-margin-right: 0px;
-padding: 0px;
-padding-bottom: 10px;
-transform: scale(1.4);
+  font-size: 15px;
+  font-weight: 100;
+  height: 22px;
+  padding-right: 5px;
+  fill: rgba(0, 128, 0, 0.758);
 }
 
 .each-all-header-box-body-percentage-wrapper{
-  font-family: "Roboto", sans-serif;
+ 
   color: rgba(0, 128, 0, 0.758);
-  font-size: 1.5rem;
+  font-size: 30px;
   margin-bottom: 2px;
 }
 
 
 .each-all-header-box-body-footer-wrapper{
-  color: hsl(0, 0%, 33%);
-  font-size: .7rem;
-  margin-bottom: 20%;
+  color: rgb(84, 84, 84);
+  font-size: 15px;
   margin-top: 5px;
 }
 
 
 .each-all-body-box{
-  width: 49% !important;
-  height: 105%;
-  background-color: #fff !important;
-  padding: 1%;
-  overflow-y: visible;
-  margin-right: calc(4vh) !important;
+  width: 49% ;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-right: 20px;
 }
 
 .each-all-body-box:last-child{
-  margin-right: 0px !important;
+  margin-right: 0px;
 }
 
 .title4{
  position: absolute;
   margin-bottom: 20px;
-  color: #555;
+  color: rgb(85, 85, 85);
 }
 
 .percent{
-  display: inline-block;
-  font-size: 1.5rem;
-  color: #555;
-  font-weight: 800;
-  margin : 0px !important;
-  padding: 0px !important;
+  font-size: 45px;
+  color: rgb(85, 85, 85);
   position: relative;
   bottom: 30px;
   right: 15px;
 }
 
 .dollar{
-  display: inline-block;
-  font-size: 1.5rem;
-  color: #555;
-  font-weight: 800;
-  margin : 0px !important;
-  padding: 0px !important;
+  font-size: 45px;
+  color: rgb(85, 85, 85);
   position: relative;
   bottom: 30px;
   left: 15px;
-
+  display: inline-block;
 }
 
 #my-pie-chart {
@@ -204,34 +137,33 @@ transform: scale(1.4);
 }
 
 #my-pie-chart {
-  border-radius: 50%;
+  border-radius: 100%;
 }
 .pie{
   margin-top: 50px;
   position: relative;
- 
 }
 
 #my-pie-chart {
-  background: conic-gradient(#709BCF 0% 10%, #76B364 10% 88%, #FFC255 89% 92%, #709BCF 92% 97%);
+  background: conic-gradient(rgb(112, 155, 207) 0% 10%, rgb(118, 179, 100) 10% 88%, rgb(255, 194, 85) 89% 92%, rgb(112, 155, 207) 92% 97%);
 }
 
 #my-pie-chart-2 {
-  
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   width: 80px;
   height: 80px;
   border-radius: 50%;
   position: relative;
   top: -33%;
   left: 50%;
+  z-index: 1000;
   transform: translate(-50%, -50%); 
 }
 
 .each-all-header-box-body-pie-label-wrapper{
- font-size: .7rem;
+ font-size: 15px;
   position: absolute;
-  color: #555;
+  color: rgb(85, 85, 85);
 }
 
 .each-all-header-box-body-pie-label-referral{
@@ -252,52 +184,40 @@ transform: scale(1.4);
   left: 50px;
 
 }
-/*
 
-*/
 .each-all-body-box1-body {
-  font-size: .5rem;
-
-  background-color: #fff;
-  padding-bottom: 0px !important;
-  margin-top: 0px !important;
+  font-size: 15px;
 }
 
 .each-all-body-box2-body{
-  font-size: .5rem;
-  height: 100% !important;
-  margin-top: -19px;
-  padding-top: -10px !important;
-  background-color: #fff !important;
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  overflow:  hidden !important;
 }
 
 .each-all-body-box-title{
-font-size: .7em;
-font-weight: 400;
-color: #555;
-margin-top: 10px;
-position: relative;
-left: 20px;
-font-weight: 600;
-margin-bottom: 15px;
-
-
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+  margin-top: 10px;
+  position: relative;
+  left: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
 
 }
 
 .each-all-body-box1-body-chart-wrapper {
   display: flex;
-  height: 50% !important;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
-
 .each-all-body-box1-body-chart-y  {    
-  color: #555;
-  font-size: 1rem;
+  color: rgb(85, 85, 85);
+  font-size: 20px;
   margin-top: 5px;
-  border-right: 2px solid #ccc;
+  border-right: 2px solid rgb(204, 204, 204);
 }
 .each-all-body-box1-body-chart-y-value {    
   padding: 20px 5px 10px 25px;
@@ -307,26 +227,23 @@ margin-bottom: 15px;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  flex: 3;
-  border-bottom: 2px solid #ccc;
-  padding-left: -20px !important;
+  border-bottom: 2px solid rgb(204, 204, 204);
 }
-
 
 .each-all-body-box1-body-chart-x-label-wrapper {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   width: 80%;
-  color: #555;
+  color: rgb(85, 85, 85);
   margin-left: 80px;
   margin-top: 15px;
-  font-size: 1rem ;
+  font-size: 20px ;
 }
 
 .each-all-body-box1-body-chart-x-label{
-padding: 0px !important;
-margin: 0px !important;
+    padding: 0px ;
+    margin: 0px ;
 }
 
 
@@ -406,7 +323,7 @@ margin: 0px !important;
   width: 35px; 
   height: 35px; 
   border-radius: 50%;
-  background-color: var(--color1);
+  background-color: var(--firstBubble-color);
 }
 
 .each-all-body-box1-body-bubble-wrapper:nth-child(2) .each-all-body-box1-body-bubble{
@@ -414,162 +331,154 @@ margin: 0px !important;
   height: 47.5px; 
   border-radius: 50%;
 
-  background-color: var(--color2);
+  background-color: var(--secondBubble-color);
 }
 
 .each-all-body-box1-body-bubble-wrapper:nth-child(3) .each-all-body-box1-body-bubble{
   width: 35px; 
   height: 35px; 
   border-radius: 50%;
-  background-color: var(--color3);
+  background-color: var(--thirdBubble-color);
 }
 
 .each-all-body-box1-body-bubble-wrapper:nth-child(4) .each-all-body-box1-body-bubble{
   width: 47.5px; 
   height: 47.5px; 
   border-radius: 50%;
-  background-color: var(--color4);
+  background-color: var(--fourthBubble-color);
 }
 
 .each-all-body-box1-body-bubble-wrapper:nth-child(5) .each-all-body-box1-body-bubble{
   width: 80px; 
   height: 80px; 
   border-radius: 50%;
-  background-color: var(--color5);
+  background-color: var(--fifthBubble-color);
 }
 
 .each-all-body-box1-body-bubble-wrapper:nth-child(6) .each-all-body-box1-body-bubble{
   width: 47.5px; 
   height: 47.5px; 
   border-radius: 50%;
-  background-color: var(--color6);
+  background-color: var(--sixthBubble-color);
 }
 
 .each-all-body-box1-body-bubble-wrapper:nth-child(7) .each-all-body-box1-body-bubble{
   width: 35px; 
   height: 35px; 
   border-radius: 50%;
-  background-color: var(--color7);
+  background-color: var(--seventhBubble-color);
 }
 
 .each-all-body-box1-body-bubble-wrapper:nth-child(8) .each-all-body-box1-body-bubble{
   width: 55px; 
   height: 55px; 
   border-radius: 50%;
-  background-color: var(--color8);
+  background-color: var(--eighthBubble-color);
 }
 
 .each-all-body-box1-body-bubble-wrapper:nth-child(9) .each-all-body-box1-body-bubble{
   width: 47.5px; 
   height: 47.5px; 
   border-radius: 50%;
-  background-color: var(--color9);
+  background-color: var(--ninthBubble-color);
 }
 
 .each-all-body-box1-body-bubble-wrapper:nth-child(10) .each-all-body-box1-body-bubble{
   width: 100px; 
   height: 100px; 
   border-radius: 50%;
-  background-color: var(--color10);
+  background-color: var(--tenthBubble-color);
 }
 
 .each-all-body-box1-body-bubble-wrapper:nth-child(11) .each-all-body-box1-body-bubble{
   width: 80px; 
   height: 80px; 
   border-radius: 50%;
-  background-color: var(--color11);
+  background-color: var(--eleventhBubble-color);
 }
 
 .each-all-body-box1-body-bubble-wrapper:nth-child(12) .each-all-body-box1-body-bubble{
   width: 80px; 
   height: 80px; 
   border-radius: 50%;
-  background-color: var(--color12);
+  background-color: var(--twelvthBubble-color);
 }
 
 .each-all-body-box1-body-bubble-wrapper:nth-child(13) .each-all-body-box1-body-bubble{
       width: 75px;
       height: 75px;
       border-radius: 50%;
-      background-color: var(--color14);
+      background-color: var(--fourtenthBubble-color);
  }
 
  .each-all-body-box1-body-bubble-wrapper:nth-child(14) .each-all-body-box1-body-bubble{
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background-color: var(--color13);
+      background-color: var(--thirtenthBubble-color);
  }
 
 .each-all-body-box1-footer-wrapper{
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  background-color: #fff;
-  color: black;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   width: 100%;
   padding: 0px;
-  padding-top: 10px;;
-  font-size: .7rem;
-  margin-bottom: 60px !important;
+  padding-top: 10px;
+  font-size: 15px;
+  margin-bottom: 60px;
 }
 
 .each-all-body-box1-footer{
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  color: black;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
 
 }
 
-
 .each-all-body-box1-footer-states{
-  content: ".";
-  display: block;
   width: 15px;
   height: 15px;
-  border-radius: 50%;
+  border-radius: 100%;
   position: relative;
   top: 50%;
   padding-left: 0px; 
 }
 
 .each-all-body-box1-footer-states.states1{
-left: -22% !important;
-background-color: var(--color10) !important;
+left: -22% ;
+background-color: var(--tenthBubble-color) ;
 }
 .each-all-body-box1-footer-states.states2{
-left: -32% !important;
-background-color: var(--color6) !important;
+left: -32% ;
+background-color: var(--sixthBubble-color) ;
 }
 .each-all-body-box1-footer-states.states3{
-left: -40% !important;
-background-color: var(--color3) !important;
+left: -40% ;
+background-color: var(--thirdBubble-color) ;
 }
 .each-all-body-box1-footer-states.states4{
-left: -20% !important;
-background-color: var(--color1) !important;
+left: -20% ;
+background-color: var(--firstBubble-color) ;
 }
-
 
 .each-all-body-box2-body-bar-wrapper {
   display: flex;
   width: 100%;
-  overflow: hidden;
 }
-
-
 
 .each-all-body-box2-body-bar-y-wrapper {
   z-index: 1000;
-  overflow: visible;
 }
 
 .each-all-body-box2-body-bar-y {    
   padding: 1px 0px 0px 5px;
   position: relative;
-  color: #555;
-  font-size: 1rem;
+  color: rgb(85, 85, 85);
+  font-size: 18px;
   margin-top: 40px;
  
 }
@@ -577,9 +486,9 @@ background-color: var(--color1) !important;
 .each-all-body-box2-body-bar-y::after {    
   content: "";
   display: block;
-  width: 1300%;
+  width: 1200%;
   height: 1px;
-  background-color: #ccc;
+  background-color: rgb(204, 204, 204);
   position: absolute;
   bottom: 50%;
   left: 95%;
@@ -594,20 +503,20 @@ background-color: var(--color1) !important;
 }
 
 .each-all-body-box2-body-bar-x-wrapper-label {
- display: flex;
+   display: flex;
   justify-content: space-around;
-  flex-direction: row;
   width: 60%;
-  margin: 0 10%;
-  color: #555;
+  margin: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: rgb(85, 85, 85);
+  border: 1px solid red;
 }
 
 .each-all-body-box2-body-bar-x {
   position: relative;
   width: 22%;
   z-index: 1000;
-
-  
 }
 
 .each-all-body-box2-body-bar-x:nth-child(1) {
@@ -641,7 +550,6 @@ background-color: var(--color1) !important;
   bottom: 10%;
   left: -8%;
 }
-
 
 .each-all-body-box2-body-bar-x:nth-child(1) .each-all-body-box2-body-bar {
   background: linear-gradient(to bottom, var(--bar-top) 49%, var(--bar-middle1) 49% 94%, var(--bar-bottom) 94%);
@@ -685,20 +593,19 @@ background-color: var(--color1) !important;
 
 }
 
-
-
 .each-all-body-box2-body-bar-x-label-wrapper{
   display: flex;
   flex-direction: row;
   width: 80%;
-  margin-left: 70px !important;
-  color: #555;
-  margin-top: 20px !important;
+  margin-left: 70px ;
+  color: rgb(85, 85, 85);
+  margin-top: 20px ;
 }
+
 .each-all-body-box2-body-bar-x-label{
   display: flex;
   flex-direction: row;
-  margin: 0px 17px 0px 0px !important;
-  padding: 0px !important;
-  font-size: 1rem;
+  margin: 0px 17px 0px 0px ;
+  padding: 0px ;
+  font-size: 20px;
 }
