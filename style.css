@@ -192,7 +192,7 @@
 .each-all-body-box2-body{
   font-size: 15px;
   background-color: rgb(255, 255, 255);
-  overflow:  hidden !important;
+  overflow:  hidden;
 }
 
 .each-all-body-box-title{
@@ -210,7 +210,7 @@
 .each-all-body-box1-body-chart-wrapper {
   display: flex;
   width: 100%;
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 .each-all-body-box1-body-chart-y  {    
